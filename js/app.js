@@ -113,6 +113,7 @@ function add() {
 
 // a variable that keeps track whether the function is aleady running or not
 let called = false;
+
 function timer() {
     t = setTimeout(add, 1000);
     // when the function is run... change the variable to true
@@ -127,11 +128,11 @@ function logic() {
     allCards.forEach(function(card) {
 
         card.addEventListener('click', function() {
-        
-        // only run the timer function if not already running (basically just run it once)
-       if ( !called ) {
-          timer();
-}
+
+            // only run the timer function if not already running (basically just run it once)
+            if (!called) {
+                timer();
+            }
 
             //fix double click Event
             if (!card.classList.contains('open') && !card.classList.contains('show') && !card.classList.contains('match'))
@@ -146,7 +147,7 @@ function logic() {
                 //console.log(numMovesTaken);
 
 
-        /*
+                /*
 		   Decrease count of stars based on the number of moves taken
 			  */
                 if (numMovesTaken > 10 && numMovesTaken < 20) {
