@@ -2,19 +2,47 @@
 
 ## Table of Contents
 
+* [Background](#background)
 * [Instructions](#instructions)
-* [Contributing](#contributing)
+* [Dependencies](#dependencies)
+* [How To Play](#howtoplay)
+
+## Background
+
+This is a Memory game, "Concentration" build using JavaScript, DOM Selectors and Event Listeners. The goal is to match all the cards in the least amount of moves and time. If the two cards opened by the user, do not match, then the game hides the cards. But if they do match, then the cards stay open. A user can only open two cards at a time.
+
+When all the cards match, an alert message will be displayed showing the statistics (amount of time taken, number of moves taken, rating, to complete the game).
+
+When all the cards are matched, the game will prompt the user asking if the user wants to play the game again.
+
+Everytime the game is played, the cards are randomly shuffled using Fisher-Yates (aka Knuth) Shuffle algorithm so that a user cannot remember the location of the cards time ahead:
+
+The algorithm can be found at:
+
+https://github.com/coolaj86/knuth-shuffle
+
 
 ## Instructions
+Click on any card to begin playing the game. The timer will start after the first card is clicked.
+Count of stars decrease by 1 if number of moves taken are greater than 10 and less than 20.
+Count of stars decrease by further 1 if number of moves taken are greater than 20.
 
-The starter project has some HTML and CSS styling to display a static version of the Memory Game project. You'll need to convert this project from a static project to an interactive one. This will require modifying the HTML and CSS files, but primarily the JavaScript file.
 
-To get started, open `js/app.js` and start building out the app's functionality
+## Dependencies
 
-For specific, detailed instructions, look at the project instructions in the [Udacity Classroom](https://classroom.udacity.com/me).
+Framework: Bootstrap
 
-## Contributing
+Library: Font Awesome
 
-This repository is the starter code for _all_ Udacity students. Therefore, we most likely will not accept pull requests.
+Vanilla JS
 
-For details, check out [CONTRIBUTING.md](CONTRIBUTING.md).
+## How to Play
+
+Download the folder and extract it.
+
+Open the index.html file to play the game.
+
+
+
+
+
