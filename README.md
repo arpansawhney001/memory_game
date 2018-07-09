@@ -24,7 +24,9 @@ https://github.com/coolaj86/knuth-shuffle
 
 ## Instructions
 Click on any card to begin playing the game. The timer will start after the first card is clicked.
+
 Count of stars decrease by 1 if number of moves taken are greater than 10 and less than 20.
+
 Count of stars decrease by further 1 if number of moves taken are greater than 20.
 
 
@@ -41,8 +43,5 @@ Vanilla JS
 Download the folder and extract it.
 
 Open the index.html file to play the game.
-
-
-
 
 
